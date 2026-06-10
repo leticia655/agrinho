@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agro Forte - Futuro Sustentável</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🌱 AGRO FORTE</div>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#cadeia">Cadeia</a>
+    <a href="#dados">Dados</a>
+    <a href="#sustentabilidade">Sustentabilidade</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-box">
+    <h1>FUTURO SUSTENTÁVEL</h1>
+    <p>O agronegócio alimenta o mundo com tecnologia, inovação e responsabilidade ambiental.</p>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="secao">
+  <h2>🌾 O que é o Agronegócio?</h2>
+
+  <p class="texto">
+    O agronegócio é toda a cadeia produtiva que envolve produção agrícola, pecuária, indústria e logística.
+    Ele é um dos principais motores da economia brasileira.
+  </p>
+
+  <div class="cards">
+    <div class="card" onclick="abrir('Agricultura: cultivo de soja, milho, café e outros alimentos essenciais.')">🌱 Agricultura</div>
+    <div class="card" onclick="abrir('Pecuária: criação de bovinos, suínos e aves para alimentação e exportação.')">🐄 Pecuária</div>
+    <div class="card" onclick="abrir('Indústria: transformação dos produtos do campo em alimentos e derivados.')">🏭 Indústria</div>
+    <div class="card" onclick="abrir('Logística: transporte e distribuição de alimentos pelo país e mundo.')">🚚 Logística</div>
+  </div>
+</section>
+
+<!-- CADEIA PRODUTIVA -->
+<section id="cadeia" class="secao verde">
+  <h2>🏗 Cadeia Produtiva (clique em cada etapa)</h2>
+
+  <div class="fluxo">
+
+    <div onclick="abrir('Insumos: sementes, fertilizantes e máquinas agrícolas.')">Insumos</div>
+
+    <div onclick="abrir('Produção: plantio e criação de animais no campo.')">Produção</div>
+
+    <div onclick="abrir('Colheita: retirada dos produtos do campo.')">Colheita</div>
+
+    <div onclick="abrir('Indústria: processamento e transformação.')">Indústria</div>
+
+    <div onclick="abrir('Distribuição: transporte para mercados e exportação.')">Distribuição</div>
+
+    <div onclick="abrir('Consumo: chegada ao consumidor final.')">Consumo</div>
+
+  </div>
+</section>
+
+<!-- DADOS -->
+<section id="dados" class="secao">
+
+  <h2>📊 Dados do Agronegócio no Brasil</h2>
+
+  <div class="graficos">
+
+    <canvas id="grafico1"></canvas>
+    <canvas id="grafico2"></canvas>
+
+  </div>
+</section>
+
+<!-- SUSTENTABILIDADE -->
+<section id="sustentabilidade" class="secao verde">
+
+  <h2>🌱 Sustentabilidade</h2>
+
+  <p class="texto">
+    O agronegócio moderno busca equilíbrio entre produção e preservação ambiental.
+  </p>
+
+  <div class="cards">
+    <div class="card2">🌳 Preservação de florestas</div>
+    <div class="card2">💧 Uso consciente da água</div>
+    <div class="card2">🚜 Agricultura de precisão</div>
+    <div class="card2">🌎 Redução de impactos ambientais</div>
+  </div>
+
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-box">
+    <p id="texto"></p>
+    <button onclick="fechar()">Fechar</button>
+  </div>
+</div>
+
+<footer>
+🌱 Agro Forte - Projeto Educacional • 2026
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
